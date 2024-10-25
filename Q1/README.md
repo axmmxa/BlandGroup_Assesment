@@ -10,11 +10,8 @@ A simple Node.js application that checks if a given word or number is a palindro
 
 ## Installation
 
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-   cd <repository-folder>
-   ```
+1. Clone this repository.
+2. Run `npm install` to install any required dependencies
 
 2. Install dependencies:
    ```bash
@@ -30,7 +27,7 @@ npm start
 ```
 
 ### Example
-```javascript
+```javascript index.js
 let data = "A man, a plan, a canal: Panama"; // This will output that it is a palindrome.
 ```
 
@@ -42,14 +39,7 @@ To run the tests, use the following command:
 npm test
 ```
 
-### Test Cases
-The following test cases are included:
-- Simple palindromes (e.g., "radar")
-- Case insensitive checks (e.g., "Deleveled")
-- Palindromes with special characters (e.g., "A man, a plan, a canal: Panama")
-- Non-palindromes (e.g., "hello")
-- Numeric palindromes (e.g., 12321)
-- Empty strings and single character strings
+
 
 ## License
 
