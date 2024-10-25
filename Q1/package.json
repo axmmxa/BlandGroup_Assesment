@@ -1,0 +1,16 @@
+{
+  "name": "BlandGroupQ1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Alexander Much",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
