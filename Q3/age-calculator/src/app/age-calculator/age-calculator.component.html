@@ -1,0 +1,38 @@
+<div class="container">
+  <h2>Age Calculator</h2>
+  <h4>Assesment Blandgroup Q3 by Alexander Much</h4>
+
+  <!-- The form for calculating age -->
+  <form (ngSubmit)="calculateAge()" #dobForm="ngForm">
+
+    <!-- Input for Date of Birth with validation -->
+    <label for="dob">Enter your Date of Birth (dd/mm/yyyy):</label>
+    <input
+      type="text"
+      id="dob"
+      [(ngModel)]="dob"
+      name="dob"
+      placeholder="dd/mm/yyyy"
+      required
+      pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/[0-9]{4}$"
+      #dobInput="ngModel"
+      class="form-control"
+    />
+
+    <!-- Error messages if input is invalid -->
+    <div *ngIf="dobInput.invalid && dobInput.touched" class="error-message">
+      <small *ngIf="dobInput.errors?.['required']">Date of Birth is required.</small> <!-- Bracket notation for required -->
+      <small *ngIf="dobInput.errors?.['pattern']">Please enter a valid date in dd/mm/yyyy format.</small> <!-- Bracket notation for pattern -->
+    </div>
+
+    <!-- Disable submit button when form is invalid -->
+    <button type="submit" [disabled]="dobForm.invalid">Calculate Age</button>
+  </form>
+
+  <!-- Display the calculated age if available -->
+  <div *ngIf="age">
+    <p>{{ age.years }} years, {{ age.months }} months, {{ age.days }} days</p>
+    <p>{{ age.hours }} hours, {{ age.minutes }} minutes, {{ age.seconds }} seconds</p>
+  </div>
+</div>
+

@@ -1,0 +1,18 @@
+/* Styling for the error message */
+.error-message {
+  color: red;             /* Set text color to red for visibility */
+  font-size: 0.9em;       /* Slightly smaller font for error messages */
+  margin-top: 5px;        /* Add space between the input field and error */
+}
+
+/* Optional styling for the input field when invalid */
+input.ng-invalid.ng-touched {
+  border-color: red;      /* Set border color to red when input is invalid */
+  background-color: #ffe6e6;  /* Light red background to highlight error */
+}
+
+/* Disable button styling */
+button[disabled] {
+  background-color: #cccccc;  /* Grey out disabled button */
+  cursor: not-allowed;        /* Show "not-allowed" cursor when disabled */
+}
