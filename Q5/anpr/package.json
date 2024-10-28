@@ -1,0 +1,20 @@
+{
+  "name": "anpr",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Alexander Much",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "jest-mock": "^29.7.0",
+    "mysql2": "^3.11.3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
