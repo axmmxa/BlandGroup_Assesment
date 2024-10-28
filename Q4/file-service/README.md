@@ -27,7 +27,9 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Before Basic ProjectSetup
-Make sure Docker is installed on your local machine : https://www.docker.com/
+Ensure Docker is installed on your local machine: https://www.docker.com. 
+Make sure the Docker Engine is running (it’s recommended to use Docker Desktop).
+
 
 ## Pull the Docker Images
 ```bash
